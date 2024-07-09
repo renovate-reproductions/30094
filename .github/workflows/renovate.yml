@@ -14,7 +14,6 @@ jobs:
       - name: Renovate
         uses: renovatebot/github-action@259200be4d976a76196ec8985b0dddcaf1733b47 # v40.2.0
         with:
-          configurationFile: .github/renovate-global.json
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           LOG_LEVEL: debug
