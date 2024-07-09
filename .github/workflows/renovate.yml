@@ -1,6 +1,7 @@
 name: Renovate
 on:
   workflow_dispatch:
+  push:
 jobs:
   renovate:
     runs-on: ubuntu-latest
