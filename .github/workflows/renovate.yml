@@ -1,11 +1,10 @@
 name: Renovate
 on:
-  schedule:
-    - cron: '0/30 * * * *'
   workflow_dispatch:
 jobs:
   renovate:
     runs-on: ubuntu-latest
+    environment: test-env
     timeout-minutes: 5
     steps:
       - name: Checkout
